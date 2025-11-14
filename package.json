@@ -1,17 +1,18 @@
 {
-  "name": "markdown-pdf-mcp",
+  "name": "mcp-markdown-pdf",
   "version": "1.0.0",
   "description": "MCP server for converting Markdown to PDF with customizable styling",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "markdown-pdf-mcp": "./dist/index.js"
+    "mcp-markdown-pdf": "./dist/index.js"
   },
   "files": [
     "dist",
     "themes",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CLAUDE.md"
   ],
   "scripts": {
     "build": "tsc",

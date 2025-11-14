@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial release of markdown-pdf-mcp
+- Initial release of mcp-markdown-pdf
 - MCP server for converting Markdown to PDF
 - Support for multiple themes (GitHub, GitHub Dark, Minimal, Academic)
 - Automatic table of contents generation

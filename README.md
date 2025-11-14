@@ -19,7 +19,7 @@ An MCP (Model Context Protocol) server for converting Markdown documents to beau
 Using Claude Code CLI:
 
 ```bash
-claude mcp add markdown-pdf npx markdown-pdf-mcp
+claude mcp add markdown-pdf npx mcp-markdown-pdf
 ```
 
 Or manually add to your Claude config (`~/.claude.json`):
@@ -29,7 +29,7 @@ Or manually add to your Claude config (`~/.claude.json`):
   "mcpServers": {
     "markdown-pdf": {
       "command": "npx",
-      "args": ["markdown-pdf-mcp"]
+      "args": ["mcp-markdown-pdf"]
     }
   }
 }
