@@ -1,0 +1,226 @@
+/**
+ * Academic Markdown Theme
+ * Formal academic paper style with serif fonts
+ */
+
+.markdown-body {
+  font-family: "Georgia", "Times New Roman", "Palatino Linotype", serif;
+  font-size: 12pt;
+  line-height: 1.8;
+  color: #000;
+  background-color: #fff;
+  padding: 72px 54px; /* 1 inch margins for Letter/A4 */
+  max-width: none;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-family: "Georgia", "Times New Roman", serif;
+  margin-top: 24pt;
+  margin-bottom: 12pt;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #000;
+  text-align: left;
+}
+
+.markdown-body h1 {
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24pt;
+}
+
+.markdown-body h2 {
+  font-size: 14pt;
+  margin-top: 18pt;
+}
+
+.markdown-body h3 {
+  font-size: 13pt;
+}
+
+.markdown-body h4 {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+.markdown-body h5 {
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.markdown-body h6 {
+  font-size: 11pt;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 12pt;
+  text-indent: 0;
+}
+
+/* First paragraph after heading has no indent */
+.markdown-body h1 + p,
+.markdown-body h2 + p,
+.markdown-body h3 + p,
+.markdown-body h4 + p,
+.markdown-body h5 + p,
+.markdown-body h6 + p {
+  text-indent: 0;
+}
+
+.markdown-body a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.markdown-body code {
+  background-color: #f5f5f5;
+  padding: 1px 3px;
+  margin: 0;
+  font-size: 10pt;
+  font-family: "Courier New", "Courier", monospace;
+  border: 1px solid #ddd;
+}
+
+.markdown-body pre {
+  background-color: #fafafa;
+  padding: 12pt;
+  overflow: auto;
+  font-size: 9pt;
+  line-height: 1.4;
+  border: 1px solid #ccc;
+  margin-top: 6pt;
+  margin-bottom: 12pt;
+  font-family: "Courier New", "Courier", monospace;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  border: none;
+}
+
+.markdown-body blockquote {
+  margin: 12pt 0 12pt 24pt;
+  padding: 0;
+  color: #333;
+  font-style: italic;
+  border-left: none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 6pt;
+  margin-bottom: 12pt;
+  padding-left: 24pt;
+}
+
+.markdown-body li {
+  margin-top: 3pt;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 18pt auto;
+  width: auto;
+  font-size: 11pt;
+}
+
+.markdown-body table caption {
+  margin-bottom: 6pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+  padding: 6pt 12pt;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: left;
+}
+
+.markdown-body table td {
+  padding: 6pt 12pt;
+  border-bottom: 1px solid #ccc;
+}
+
+.markdown-body table tr:last-child td {
+  border-bottom: 2px solid #000;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 18pt auto;
+  display: block;
+}
+
+.markdown-body hr {
+  height: 1px;
+  padding: 0;
+  margin: 24pt 0;
+  background-color: #000;
+  border: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+/* Academic TOC styling */
+.toc {
+  background: transparent !important;
+  border: none !important;
+  margin: 24pt 0 !important;
+  padding: 0 !important;
+}
+
+.toc-title {
+  font-size: 14pt !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin-bottom: 12pt !important;
+  font-family: "Georgia", serif !important;
+}
+
+.toc ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.toc ul ul {
+  padding-left: 18pt !important;
+}
+
+.toc a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.toc a:hover {
+  text-decoration: underline !important;
+}
+
+/* Page numbers in academic style */
+@page {
+  margin: 1in;
+}

@@ -1,0 +1,56 @@
+# Source files (only ship compiled dist/)
+src/
+*.ts
+!*.d.ts
+tsconfig.json
+.tsbuildinfo
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+test-output/
+*.pdf
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+circle.yml
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Documentation source
+docs/
+.cursor/
+.cursorrules
+
+# Temporary files
+tmp/
+temp/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+CONCURRENCY-IMPROVEMENTS.md
+test.md

@@ -1,0 +1,57 @@
+{
+  "name": "markdown-pdf-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for converting Markdown to PDF with customizable styling",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "markdown-pdf-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "themes",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "postinstall": "node --input-type=module -e \"import{execSync}from'child_process';try{execSync('npx playwright install chromium',{stdio:'inherit'})}catch(e){console.warn('Warning: Failed to install Playwright. Run: npx playwright install chromium')}\""
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "markdown",
+    "pdf",
+    "converter",
+    "playwright",
+    "claude",
+    "markdown-to-pdf"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GavinKung/markdown-pdf-mcp.git"
+  },
+  "homepage": "https://github.com/GavinKung/markdown-pdf-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/GavinKung/markdown-pdf-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "playwright": "^1.48.0",
+    "marked": "^14.1.3",
+    "highlight.js": "^11.10.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
